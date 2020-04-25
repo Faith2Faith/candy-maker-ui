@@ -1,6 +1,6 @@
-const models = require('../models')
+import models from '../models'
 
-const getAllProducts = async (request, response) => {
+export const getAllProducts = async (request, response) => {
   const products = await models.Products.findAll({
     include: [{ model: models.Manufacturers }],
   })
@@ -8,7 +8,7 @@ const getAllProducts = async (request, response) => {
   return response.send(products)
 }
 
-const getProductsById = async (request, response) => {
+export const getProductsById = async (request, response) => {
   const { id } = request.params
 
   const product = await models.Products.findOne({
@@ -24,5 +24,3 @@ const getProductsById = async (request, response) => {
     ? response.send(product)
     : response.sendStatus(404)
 }
-
-module.exports = { getAllProducts, getProductsById }
