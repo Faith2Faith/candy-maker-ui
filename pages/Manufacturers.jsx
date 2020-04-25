@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Manufacturer from './Manufacturer'
-import Search from './Search'
+import Manufacturer from '../components/Manufacturer'
+import Page from '../components/Page'
+import Search from '../components/Search'
+import Title from '../components/Title'
 import { filterManufacturers, retrieveManufacturers } from '../utils/manufacturers'
 
 export default () => {
@@ -26,8 +28,8 @@ export default () => {
   }, [searchTerm])
 
   return (
-    <div className="page">
-      <div className="title">Candy Makers</div>
+    <Page>
+      <Title />
       <Search term={searchTerm} setter={setSearchTerm} />
       {
         filteredManufacturerList.map(manufacturer => (
@@ -39,6 +41,6 @@ export default () => {
           />
         ))
       }
-    </div>
+    </Page>
   )
 }
