@@ -21,7 +21,8 @@ input {
   width: 250px;
 }
 
-.output {
+.manufacturer {
   font-size: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
