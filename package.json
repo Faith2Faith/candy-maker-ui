@@ -1,0 +1,38 @@
+{
+  "name": "candy-maker-ui",
+  "version": "1.0.0",
+  "description": "## Part Four Instructions In the initial commit of this project you have been provided with an API server and the basic project setup for a React project. In a new branch called `part-one-answer`, your task is to clean up your mono-repo following the best practices laid out in class. Specifically: 1) Your Node code should be compiled with Babel so that it can utilize the last ES features 2) Your React site should be served by your Express server such that routes with `/api` call the REST API and all other routes return the React app 3) Your ESLint rules should be updated to use the React rules and `npm run lint` should return no errors 4) The `npm run dev` command should spin up both your client and server in watch mode",
+  "main": "server.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/env-cmd ./node_modules/.bin/nodemon index.js",
+    "dev:migrate": "./node_modules/.bin/env-cmd ./node_modules/.bin/sequelize db:migrate --env development --config ./configs/sequelize.js",
+    "lint": "./node_modules/.bin/eslint --format codeframe .",
+    "lint:fix": "./node_modules/.bin/eslint --fix --format codeframe ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stackeducation/candy-maker-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stackeducation/candy-maker-ui/issues"
+  },
+  "homepage": "https://github.com/stackeducation/candy-maker-ui#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.7",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "env-cmd": "^10.1.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
