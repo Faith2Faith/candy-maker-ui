@@ -1,2 +1,5 @@
+# Ignore built assets
+public
+
 # Ignore webpack config
 webpack.dev.js
