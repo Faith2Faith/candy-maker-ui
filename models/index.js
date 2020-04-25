@@ -1,7 +1,7 @@
-const Sequelize = require('sequelize')
-const allConfigs = require('../configs/sequelize')
-const ManufacturersModel = require('./manufacturers')
-const ProductsModel = require('./products')
+import Sequelize from 'sequelize'
+import allConfigs from '../configs/sequelize'
+import ManufacturersModel from './manufacturers'
+import ProductsModel from './products'
 
 const environment = process.env.NODE_ENV || 'development'
 const config = allConfigs[environment]
@@ -16,7 +16,7 @@ const Products = ProductsModel(connection, Sequelize, Manufacturers)
 Products.belongsTo(Manufacturers)
 Manufacturers.hasMany(Products)
 
-module.exports = {
+export default {
   Manufacturers,
   Products,
 }

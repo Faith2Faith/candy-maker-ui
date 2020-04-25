@@ -1,0 +1,27 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px auto 0;
+  width: 60%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+input {
+  border-radius: 8px;
+  font-size: 20px;
+  margin: 30px auto;
+  outline: none;
+  padding: 5px 8px;
+  width: 250px;
+}
+
+.output {
+  font-size: 20px;
+  text-align: center;
+}
