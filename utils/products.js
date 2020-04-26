@@ -1,4 +1,4 @@
-import fetchProductsForManufacturer from '../actions/products'
+import { fetchProductsForManufacturer } from '../actions/products'
 
 export const extractYear = year => year.split('-')[0]
 

@@ -1,0 +1,51 @@
+export const manufacturersFiltersForAug = [{
+  id: 1,
+  name: 'August Storck KG',
+  country: 'DE',
+  createdAt: '2020-04-25T15:27:08.000Z',
+  updatedAt: '2020-04-25T15:27:08.000Z',
+  deletedAt: null,
+  products: [{
+    id: 1,
+    name: 'Mamba',
+    yearIntroduced: '1953-01-01',
+    manufacturerId: 1,
+    createdAt: '2020-04-25T15:27:08.000Z',
+    updatedAt: '2020-04-25T15:27:08.000Z',
+    deletedAt: null,
+  }],
+}]
+
+export const manufacturerList = [{
+  id: 1,
+  name: 'August Storck KG',
+  country: 'DE',
+  createdAt: '2020-04-25T15:27:08.000Z',
+  updatedAt: '2020-04-25T15:27:08.000Z',
+  deletedAt: null,
+  products: [{
+    id: 1,
+    name: 'Mamba',
+    yearIntroduced: '1953-01-01',
+    manufacturerId: 1,
+    createdAt: '2020-04-25T15:27:08.000Z',
+    updatedAt: '2020-04-25T15:27:08.000Z',
+    deletedAt: null,
+  }],
+}, {
+  id: 4,
+  name: 'G.B. Ambrosoli',
+  country: 'IT',
+  createdAt: '2020-04-25T15:27:08.000Z',
+  updatedAt: '2020-04-25T15:27:08.000Z',
+  deletedAt: null,
+  products: [{
+    id: 13,
+    name: 'Zots',
+    yearIntroduced: '1968-01-01',
+    manufacturerId: 4,
+    createdAt: '2020-04-25T15:27:08.000Z',
+    updatedAt: '2020-04-25T15:27:08.000Z',
+    deletedAt: null,
+  }],
+}]
